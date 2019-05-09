@@ -1,0 +1,81 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4">
+        <h3 class="heading-section">Unete a Nosotros</h3>
+        <p class="mb-5" id="txtf1">Si eres también un amante de la comida nikkei, unete a nuestra
+          comunidad que busca seguir dando a conocer esta creciente cultura culinaria.
+        </p>
+        <p><a href="#" class="btn btn-success px-4 py-3">Comunidad Nikkei</a></p>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h3 class="heading-section">Blog</h3>
+        <div class="block-21 d-flex mb-4">
+          <figure class="mr-3">
+            <img src="resources/img/img_1.jpg" alt="" class="img-fluid">
+          </figure>
+          <div class="text">
+            <h3 class="heading"><a href="#">¿Cómo preparar la mesa para comer sushi?</a></h3>
+            <div class="meta">
+              <div><a href="#"> <script>
+            document.write(new Date().getFullYear());
+          </script></a></div>
+              <div><a href="#"> Admin</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block-21 d-flex mb-4">
+          <figure class="mr-3">
+            <img src="resources/img/img_2.jpg" alt="" class="img-fluid">
+          </figure>
+          <div class="text">
+            <h3 class="heading"><a href="#">Vivir 100 años es posible si sigues la dieta</a></h3>
+            <div class="meta">
+              <div><a href="#"> <script>
+            document.write(new Date().getFullYear());
+          </script></a></div>
+              <div><a href="#"> Admin</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block-21 d-flex mb-4">
+          <figure class="mr-3">
+            <img src="resources/img/img_4.jpg" alt="" class="img-fluid">
+          </figure>
+          <div class="text">
+            <h3 class="heading"><a href="#">Cómo comer sushi correctamente</a></h3>
+            <div class="meta">
+              <div><a href="#"> <script>
+            document.write(new Date().getFullYear());
+          </script></a></div>
+              <div><a href="#"> Admin</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="block-23">
+          <h3 class="heading-section">Informacion de Contacto</h3>
+          <ul>
+            <li><span class="text">La Molina, Lima, Perú</span></li>
+            <li><a href="#"><span class="text">+51 965 895 572</span></a></li>
+            <li><a href="#"><span class="text">info@hamachisushibar.com</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row pt-5">
+      <div class="col-md-12 text-center">
+        <p>
+          Hamachi Sushi Bar &copy;<script>
+            document.write(new Date().getFullYear());
+          </script> Todos los derechos reservados
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

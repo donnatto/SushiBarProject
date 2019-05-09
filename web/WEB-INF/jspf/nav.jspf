@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.jsp">Hamachi Sushi Bar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a href="#card1" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li class="nav-item"><a href="#carta" class="nav-link">Carta</a></li>
+        <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="#staff" class="nav-link">Staff</a></li>
+        <li class="nav-item"><a href="#instalaciones" class="nav-link">Instalaciones</a></li>
+        <li class="nav-item"><a href="#trabaja" class="nav-link">Trabaja con Nosotros</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

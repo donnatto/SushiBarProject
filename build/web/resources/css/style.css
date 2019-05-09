@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 30px;
+  font-family: "Gaegu", cursive; }
+.card>img{
+	filter: brightness(50%);
+}
+body{
+	font-family: "Poppins", sans-serif;
+}
+h1{
+	font-size: 70px;
+	font-family: "Gaegu", cursive;
+	font-weight: bold;
+}
+h2{
+	font-family: "Poppins", sans-serif;
+	font-size: 28px;
+}
+h3{
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+}
+.site-section{
+	padding-top: 74px;
+	padding-bottom: 64px;
+}
+.media-body{
+	padding: 0 20px;
+}
+.featured-nosotros{
+	background-image: url('../img/bg_2.jpg');
+        padding-top: 74px;
+	padding-bottom: 64px;
+	color: #fff;
+}
+.img-hover{
+	position: relative;
+    display: block;
+    overflow: hidden;
+}
+.img-hover img{
+	transition: .3s ease all;
+}
+.img-hover:hover img{
+	transform: scale(1.2);
+}
+.overlay-color{
+	background: #3C9E4A;
+}
+.featured-text{
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+.card-body>p{
+	font-size: 15px;
+}
+.person:hover{
+	transition: 0.5s ease;
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);	
+}
+.person>img{
+	width: 100px;
+	margin-bottom: 20px;
+}
+.person-info>h2{
+	font-size: 20px;
+	font-weight: 300;
+}
+.featured-trabaja{
+	padding-top: 74px;
+	padding-bottom: 64px;
+	color: #fff;
+}
+.footer{
+	background: #404040;
+	padding-top: 70px;
+	color: #fff;
+}
+a{
+	color: #fff;
+}
+.heading-section{
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	font-family: "Gaegu", cursive;
+	font-weigth: 300px;
+	letter-spacing: 0.1em;
+}
+#txtf1{
+	line-height: 1.8;
+	font-family: "Poppins", sans-serif;
+}
+.block-21>figure{
+	flex: 0 0 80px;
+}
+h3.heading{
+	font-size: 18px;
+	font-weight: 300;
+}
+.meta{
+	font-size: 12px;
+}
+ul{
+	line-height: 1.5;
+}
+li{
+	list-style: none;
+	margin-bottom: 15px;
+}
+.navbar-brand {
+	font-weight: bold;
+	font-size: 25px;
+	padding: 0;
+}
+.bg-dark{
+	transition: 500ms ease;
+	background: transparent !important;
+}
+.bg-dark.scrolled{
+	background: #404040 !important;
+}
+#card1 {
+	background-image: url(../img/bg_1.jpg);
+	background-size: cover;
+	padding: 25% 2%;
+}
+.card-2{
+	display: flex;
+	position: relative;
+}
+.card-2:hover{
+	transition: 0.5s ease;
+	border: 1px solid #404040;
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
