@@ -31,11 +31,10 @@
           <div class="col-lg-4 pr-lg-5">
             <span class="featured-text mb-3 d-block">Nosotros</span>
             <h2>Somos tu mejor opcion cuando se trata de comida nikkei</h2>
-            <p class="mb-3">Hamachi Sushi Bar es una nueva propuesta dirigida a todos los amantes de los gatos que, por
-              motivos de viaje o de trabajo, necesitan dejar a sus engreídos a cargo de otra persona por un tiempo
-              determinado. Es común el escuchar noticias de gatos perdidos y extraviados debido a que se quedan solos en
-              casa, o porque la persona encargada de cuidarlos no les prestó la atencion necesaria y el gato, por su
-              naturaleza aventurera, termina escapándose del hogar.</p>
+            <p class="mb-3">Hamachi Sushi Bar es una nueva propuesta dirigida a todos los amantes de la comida
+            que buscan nuevas y mejores experiencias. Somos un restaurant que mezcla lo mejor de la comida peruana
+            y la comida japonesa, y a través de ello, brindamos a nuestros clientes una experiencia inolvidable.
+            Acompáñanos a conocer más de esta nueva propuesta culinaria interesante.</p>
             <p><a href="#" class="btn btn-success btn-hover-white py-3 px-5">Entérate de más</a></p>
           </div>
 
@@ -130,8 +129,9 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_1.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>¿Cómo preparar la mesa para comer sushi?</h3>
-                <p class="card-text">¿Sabías que ha razas de gato que ya no existen? Descubre más sobre el gato
-                  azteca, el Rex de Oregón, el gato esquimal y el Sumxu. Colaboración con Supercurioso.com</p>
+                <p class="card-text">Preparar una noche de sushi puede ser una ocasión estresante, 
+                  especialmente si es un festejo especial. Por eso, hoy te presentaremos algunos 
+                  consejos sobre cómo preparar la mesa para comer sushi. </p>
               </div>
             </div>
           </div>
@@ -141,8 +141,9 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_2.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Vivir 100 años es posible si sigues la dieta</h3>
-                <p class="card-text">Si quieres regalar un buen libro a un auténtico amante de los gatos, lee estas
-                  recomendaciones de los seguidores de Cosas de Gatos. ¡No te lo puedes perder!</p>
+                <p class="card-text">Llegar al centenario en la vida es el sueño de muchos y la respuesta 
+                  a esta incógnita podría estar en Asia. Japón, en la actualidad, es el país del mundo con un
+                  a mayor esperanza de vida: 88,5 años y con más personas centenarias</p>
               </div>
             </div>
           </div>
@@ -152,8 +153,9 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_3.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>15 platos imprescindibles de la cocina japonesa</h3>
-                <p class="card-text">A continuación te presentamos algunas imágenes de unas especies de gatos y de
-                  felinos que seguro que no conocías, aunque no lo creas.</p>
+                <p class="card-text">Sobre la comida japonesa sigue existiendo la idea de que todo es o sushi
+                  o tempura, y nada más lejos de la realidad. Japón es un país foodie, como se suele decir ahora,
+                  pero también históricamente un paraíso gourmet con una de las mejores cocinas del mundo.</p>
               </div>
             </div>
           </div>
@@ -163,8 +165,9 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_4.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Curiosidades de la cocina gastronómica nikkei</h3>
-                <p class="card-text">Conoce las razones por las cuáles estos felinos suelen ser animales nocturnos,
-                  especialmente si tu gato no te deja dormir por las noches.</p>
+                <p class="card-text">La gastronomía japonesa cada día gana más adeptos, y más y más personas 
+                  cada año se hacen fanáticas de esta saludable y sabrosa cocina. Así que para todas las amantes 
+                  de la gastronomía de este país traemos algunas curiosidades de la cocina japonesa que las sorprenderán.</p>
               </div>
             </div>
           </div>
@@ -174,8 +177,9 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_5.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Ocho trucos japoneses para adelgazar</h3>
-                <p class="card-text">Si has soñado que te ataca un gato, que acaricias a un minino, que pierdes a
-                  unos gatitos… seguramente te preguntas qué simboliza. Conoce la respuesta.</p>
+                <p class="card-text">Asia es un continente con bajo indice de obesidad, esto se debe a sus costumbres
+                  tanto alimenticias como de ejercicio y bienestar físico y mental. En concreto los japoneses son admirados
+                  por su dieta basada en arroz, pescado, vegetales y otros secretos que desvelamos</p>
               </div>
             </div>
           </div>
@@ -185,8 +189,9 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_6.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Cómo comer sushi correctamente</h3>
-                <p class="card-text">Una de las razones por las que mucha gente tiene miedo de tener un gatito en
-                  casa es por las enfermedades que puede contraer e incluso transmitir a los humanos.</p>
+                <p class="card-text">Has conseguido dominar los palillos como si fueras del mismísimo centro de
+                  Osaka; ya sabes qué es un nigiri y un uramaki; has leído nuestra guía sobre los platos imprescindibles
+                  de la cocina nipona; e incluso ya no te la cuelan los restaurantes chinos que van de japoneses</p>
               </div>
             </div>
           </div>
