@@ -12,7 +12,7 @@ $(document).ready(function(){
 	});
 	$(".img-hover").mouseout(function(){
 		$(".img-hover img").css("filter","blur(0px)");
-	});//enfocar imagenes galeria
+	});//enfocar/desenfocar imagenes carta.
 	
 	
 	

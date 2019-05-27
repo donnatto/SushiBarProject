@@ -21,8 +21,8 @@
     <%@include file="WEB-INF/jspf/nav.jspf" %>
     <%@include file="WEB-INF/jspf/section.jspf" %>
 
+    <!-- Nosotros -->
     <div class="featured-nosotros" id="nosotros">
-
       <div class="container">
         <div class="row">
           <div class="col-lg-8 order-lg-2 mb-3 mb-lg-0">
@@ -32,25 +32,94 @@
             <span class="featured-text mb-3 d-block">Nosotros</span>
             <h2>Somos tu mejor opcion cuando se trata de comida nikkei</h2>
             <p class="mb-3">Hamachi Sushi Bar es una nueva propuesta dirigida a todos los amantes de la comida
-            que buscan nuevas y mejores experiencias. Somos un restaurant que mezcla lo mejor de la comida peruana
-            y la comida japonesa, y a través de ello, brindamos a nuestros clientes una experiencia inolvidable.
-            Acompáñanos a conocer más de esta nueva propuesta culinaria interesante.</p>
-            <p><a href="#" class="btn btn-success btn-hover-white py-3 px-5">Entérate de más</a></p>
-          </div>
+              que buscan nuevas y mejores experiencias. Somos un restaurant que mezcla lo mejor de la comida peruana
+              y la comida japonesa, y a través de ello, brindamos a nuestros clientes una experiencia inolvidable.
+              Acompáñanos a conocer más de esta nueva propuesta culinaria interesante.</p>
+            <button type="button" class="btn btn-success py-3 px-5" data-toggle="modal" data-target="#modalReservas">
+              Haz tu reserva aquí
+            </button>
 
+            <!--Modal Reservas-->
+            <div class="modal fade" id="modalReservas" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Realiza tu reserva</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" method="POST">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="nombre">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="apellido">Apellidos</label>
+                          <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="fecha">Fecha</label>
+                          <input type="date" class="form-control" id="fecha" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="hora">Hora</label>
+                          <select class="form-control" id="hora">
+                            <option value="2">2 pm</option>
+                            <option value="3">3 pm</option>
+                            <option value="4">4 pm</option>
+                            <option value="5">5 pm</option>
+                            <option value="6">6 pm</option>
+                            <option value="7">7 pm</option>
+                            <option value="8">8 pm</option>
+                            <option value="9">9 pm</option>
+                            <option value="10">10 pm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="cantidad">Cantidad de comensales</label>
+                          <input type="text" class="form-control" id="cantidad" placeholder="Nro. de comensales" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="nroContacto">Nro de Contacto</label>
+                          <input type="text" class="form-control" id="nroContacto" placeholder="Telf/Celular" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Dirección de correo electrónico" required>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <input type="submit" class="btn btn-success" value="Aceptar">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+    </div>
 
-    </div> <!-- .featured-nosotros -->
-
+    <!---Seccion Carta-->
     <div class="site-section" id="carta">
       <div class="container">
         <div class="row mb-4">
           <div class="col-md-12">
             <h2>Carta</h2>
-            <p class="mt-2">Aquí tenemos algunos de los platos que puede encontrar en nuestra carta. </p>
+            <p class="mt-2">Estos son algunos de los platos que puede encontrar en nuestra <a class="text-success" target="_blank" href="https://edosushibar.com/app/uploads/2019/03/CARTA-WEB-EDO-SUSHI-BAR.pdf">carta.</a>  </p>
           </div>
         </div>
+        <!--Galería -->
         <div class="row no-gutters">
           <div class="col-md-4">
             <a href="resources/img/g_1.jpg" class=" img-hover">
@@ -111,9 +180,8 @@
         </div>
       </div>
     </div>
-    <!---Section Carta-->
 
-
+    <!--Blog-->
 
     <div class="site-section" id="blog">
       <div class="container">
@@ -198,9 +266,10 @@
 
         </div>
       </div>
-    </div> <!-- .section blog-->
+    </div>
 
 
+    <!-- Staff-->
     <div class="site-section staff" id="staff">
       <div class="container">
         <div class="row mb-4">
@@ -255,17 +324,18 @@
           </div>
         </div>
       </div>
-    </div> <!-- .section Staff-->
+    </div> 
 
 
+    <!---Carousel Instalaciones-->
     <div class="site-section" id="instalaciones">
       <div class="container">
         <div class="row mb-3">
           <div class="col-md-12">
             <h2>Nuestras Instalaciones</h2>
             <p class="mt-2">En Hamachi Sushi Bar contamos con las mejores instalaciones para tu
-            visita, la que estamos seguros que será placentera debido a nuestra gran variedad de sabores
-            para poder satisfacer la diversidad de gustos de nuestros comensales.</p>
+              visita, la que estamos seguros que será placentera debido a nuestra gran variedad de sabores
+              para poder satisfacer la diversidad de gustos de nuestros comensales.</p>
           </div>
         </div>
 
@@ -298,10 +368,10 @@
 
       </div>
     </div>
-    <!---Carousel Instalaciones-->
 
 
-    <div class="featured-trabaja" id="trabaja" style="background-image: url('resources/img/bg_3.jpg');">
+    <!-- Trabaja con Nosotros -->
+    <div class="featured-trabaja" id="trabaja">
 
       <div class="container">
         <div class="row">
@@ -314,19 +384,58 @@
             <span class="featured-text d-block mb-3">Trabaja con Nosotros</span>
             <h2>Se parte de nuestra creciente familia</h2>
             <p class="mb-3">Promovemos el trabajo con programas que recluten gente que 
-            sienta la pasión por la cocina y las ganas de aprender los secretos de la 
-            cocina nikkei</p>
+              sienta la pasión por la cocina y las ganas de aprender los secretos de la 
+              cocina nikkei</p>
             <span class="fund-raised d-block mb-5">Tu puedes ser parte de nosotros</span>
 
-            <p><a href="#" class="btn btn-success btn-hover-white py-3 px-5">Entérate de más</a></p>
+            <p><button type="button" class="btn btn-success py-3 px-5" data-toggle="modal" data-target="#modalTrabaja">Aplica aquí</button></p>
+            <!--Modal Trabaja con Nosotros-->
+            <div class="modal fade" id="modalTrabaja" tabindex="-1" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Unete a nuestro equipo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>¿Te gustaría trabajar con nosotros? Adjunta tu CV y cuéntanos un poco de ti.</p>
+                    <form action="" method="POST">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="nombreAplicante" placeholder="Nombres">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="apellidosAplicante" placeholder="Apellidos">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="telefonoAplicante" placeholder="Nro de Contacto">
+                      </div>
+                      <div class="form-group">
+                        <div class="custom-file">
+                          <input type="file" class="file-input" id="cvAplicante">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <textarea name="" id="mensajeAplicante" rows="4" class="form-control"
+                                  placeholder="Cuéntanos un poco sobre ti"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
       </div>
+    </div> 
 
-    </div> <!-- .featured-trabaja -->
-
-
+    <!--Contacto-->
     <div class="site-section" id="contacto">
       <div class="container">
         <div class="row mb-5">
@@ -339,17 +448,17 @@
           <div class="col-md-6 pr-md-5">
             <form action="#">
               <div class="form-group">
-                <input type="text" class="form-control px-3 py-3" placeholder="Tu Nombre">
+                <input type="text" class="form-control px-3 py-3" placeholder="Nombre" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control px-3 py-3" placeholder="Tu Correo Electrónico">
+                <input type="email" class="form-control px-3 py-3" placeholder="Correo Electrónico" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control px-3 py-3" placeholder="Asunto">
+                <input type="text" class="form-control px-3 py-3" placeholder="Asunto" required>
               </div>
               <div class="form-group">
                 <textarea name="" id="" cols="30" rows="7" class="form-control px-3 py-3"
-                          placeholder="Mensaje"></textarea>
+                          placeholder="Mensaje" required></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Enviar Mensaje" class="btn btn-success py-3 px-5">
@@ -359,7 +468,7 @@
           </div>
 
           <div class="col-md-6">
-            <img src="resources/img/buzon.jpg" alt="Img Placeholder" class="img-fluid">
+            <img src="resources/img/postmail.jpg" alt="PostMail" class="img-fluid d-none d-md-flex">
           </div>
         </div>
       </div>
