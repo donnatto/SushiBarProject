@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-6 col-md-6 col-lg-4">
         <h3 class="heading-section">Unete a Nosotros</h3>
         <p class="mb-5" id="txtf1">Si eres también un amante de la comida nikkei, unete a nuestra
           comunidad que busca seguir dando a conocer esta creciente cultura culinaria.
@@ -57,12 +57,12 @@
         </div>
       </div><!--Footer Blog -->
       
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-6 col-md-6 offset-md-6 col-lg-4 offset-lg-0">
         <div class="block-23">
           <h3 class="heading-section">Informacion de Contacto</h3>
           <ul>
             <li><span class="text">La Molina, Lima, Perú</span></li>
-            <li><a href="#"><span class="text">+51 965 895 572</span></a></li>
+            <li><span class="text">+51 965 895 572</span></li>
             <li><a href="#"><span class="text">info@hamachisushibar.com</span></a></li>
           </ul>
         </div>

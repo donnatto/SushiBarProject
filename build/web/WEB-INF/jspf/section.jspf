@@ -1,16 +1,17 @@
 <div>
   <section id="card1">
-    <div class="text-white">
-      <div class="container d-flex card-img-overlay">
-        <div class="row align-items-center">
-          <div class="col-md-6 offset-md-5">
-            <h1 class="card-text d-none d-md-flex" id="section-text">Descubre el sabor de la cocina nikkei junto a nosotros</h1>
 
-          </div>
+    <div class="container h-100">
+      <div class="row">
+        <div class="col-md-10 offset-md-2  col-lg-7 offset-lg-5">
+          <h1 class="text-white" id="section-text">
+            Descubre el sabor de la cocina nikkei junto a nosotros
+          </h1>
         </div>
       </div>
-
     </div>
+
+
   </section>
   <div class="site-section">
     <div class="container">

@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : index
     Created on : 08-may-2019, 19:01:00
     Author     : ASUS
@@ -197,8 +197,8 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_1.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>¿Cómo preparar la mesa para comer sushi?</h3>
-                <p class="card-text">Preparar una noche de sushi puede ser una ocasión estresante, 
-                  especialmente si es un festejo especial. Por eso, hoy te presentaremos algunos 
+                <p class="card-text">Preparar una noche de sushi puede ser una ocasión estresante,
+                  especialmente si es un festejo especial. Por eso, hoy te presentaremos algunos
                   consejos sobre cómo preparar la mesa para comer sushi. </p>
               </div>
             </div>
@@ -209,7 +209,7 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_2.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Vivir 100 años es posible si sigues la dieta</h3>
-                <p class="card-text">Llegar al centenario en la vida es el sueño de muchos y la respuesta 
+                <p class="card-text">Llegar al centenario en la vida es el sueño de muchos y la respuesta
                   a esta incógnita podría estar en Asia. Japón, en la actualidad, es el país del mundo con un
                   a mayor esperanza de vida: 88,5 años y con más personas centenarias</p>
               </div>
@@ -233,8 +233,8 @@
               <a href="#"><img class="card-img-top" src="resources/img/img_4.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Curiosidades de la cocina gastronómica nikkei</h3>
-                <p class="card-text">La gastronomía japonesa cada día gana más adeptos, y más y más personas 
-                  cada año se hacen fanáticas de esta saludable y sabrosa cocina. Así que para todas las amantes 
+                <p class="card-text">La gastronomía japonesa cada día gana más adeptos, y más y más personas
+                  cada año se hacen fanáticas de esta saludable y sabrosa cocina. Así que para todas las amantes
                   de la gastronomía de este país traemos algunas curiosidades de la cocina japonesa que las sorprenderán.</p>
               </div>
             </div>
@@ -324,7 +324,7 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
 
 
     <!---Carousel Instalaciones-->
@@ -383,8 +383,8 @@
           <div class="col-md-6 pl-md-5">
             <span class="featured-text d-block mb-3">Trabaja con Nosotros</span>
             <h2>Se parte de nuestra creciente familia</h2>
-            <p class="mb-3">Promovemos el trabajo con programas que recluten gente que 
-              sienta la pasión por la cocina y las ganas de aprender los secretos de la 
+            <p class="mb-3">Promovemos el trabajo con programas que recluten gente que
+              sienta la pasión por la cocina y las ganas de aprender los secretos de la
               cocina nikkei</p>
             <span class="fund-raised d-block mb-5">Tu puedes ser parte de nosotros</span>
 
@@ -433,7 +433,7 @@
 
         </div>
       </div>
-    </div> 
+    </div>
 
     <!--Contacto-->
     <div class="site-section" id="contacto">
