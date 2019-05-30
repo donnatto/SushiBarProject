@@ -16,7 +16,10 @@
         <li class="nav-item"><a href="#instalaciones" class="nav-link">Instalaciones</a></li>
         <li class="nav-item"><a href="#trabaja" class="nav-link">Trabaja</a></li>
         <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li class="nav-item"><a href="#modalLogin" data-toggle="modal" data-target="#modalLogin" class="nav-link"><i class="fas fa-sign-in-alt"></i></a></li>
       </ul>
     </div>
+    
+    
   </div>
 </nav>

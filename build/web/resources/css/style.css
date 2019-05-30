@@ -162,6 +162,11 @@ li{
   color: #fff;
 }
 
+/*Contactanos*/
+#form-contacto{
+    margin-top: 40px;
+}
+
 /*Footer*/
 .footer{
   background: #404040;
