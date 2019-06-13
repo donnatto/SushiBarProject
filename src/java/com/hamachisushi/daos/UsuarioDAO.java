@@ -24,7 +24,7 @@ public class UsuarioDAO {
         Usuario usuario1 = null;
         try {
             pstm = con.getCon().prepareStatement(SQL_LOGIN);
-            pstm.setString(1,Integer.toString(usuario.getId()));
+            pstm.setString(1,usuario.getCorreo());
             pstm.setString(2,usuario.getClave());
             res = pstm.executeQuery();
             while(res.next()){

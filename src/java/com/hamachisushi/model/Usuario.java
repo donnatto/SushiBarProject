@@ -18,8 +18,8 @@ public class Usuario {
     private String area;
     private String clave;
 
-    public Usuario(int id, String clave) {
-        this.id = id;
+    public Usuario(String correo, String clave) {
+        this.correo = correo;
         this.clave = clave;
     }
 
