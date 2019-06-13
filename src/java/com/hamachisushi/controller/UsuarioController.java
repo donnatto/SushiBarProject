@@ -39,9 +39,9 @@ public class UsuarioController extends HttpServlet {
         HttpSession sessionOK = request.getSession();
         
         if (accion.equals("login")) {
-            int id = Integer.parseInt(request.getParameter("usuario"));
+            String correo = request.getParameter("usuario");
             String clave = request.getParameter("clave");
-            Usuario usuario = new Usuario(id, clave);
+            Usuario usuario = new Usuario(correo, clave);
             UsuarioDAO usuarioDAO = new UsuarioDAO();
             Usuario usuarioR = usuarioDAO.login(usuario);
             if(usuarioR!=null){
@@ -49,7 +49,7 @@ public class UsuarioController extends HttpServlet {
               sessionOK.setAttribute("apellido",usuarioR.getApellido());
               sessionOK.setAttribute("correo",usuarioR.getCorreo());
               sessionOK.setAttribute("area",usuarioR.getArea());
-              request.getRequestDispatcher("index.jsp").forward(request, response);
+              request.getRequestDispatcher("system.jsp").forward(request, response);
             }
             else{
             
@@ -62,7 +62,7 @@ public class UsuarioController extends HttpServlet {
             sessionOK.removeAttribute("correo");
             sessionOK.removeAttribute("area");
             sessionOK.invalidate();
-            request.getRequestDispatcher("index.jsp").forward(request, response);
+            request.getRequestDispatcher("cerrar.jsp").forward(request, response);
         }
         
         

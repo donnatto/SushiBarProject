@@ -32,7 +32,7 @@
                         </button>
                     </div>
                     <div class="modal-body pl-4">
-                        <form action="system.jsp" method="POST">
+                        <form action="usuariocontroller.do?accion=login" method="POST">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="usuario">Usuario</label>
@@ -65,8 +65,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="POST">
-                     q         <div class="form-row">
+                        <form action="#" method="POST">
+                              <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="nombre">Nombre</label>
                                     <input type="text" class="form-control" id="nombre" name="txtUsuarioNombre" placeholder="Nombre" required>

@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 public class ConexionBD {
     
     private static ConexionBD instance=null;
-    private static final String url="jdbc:sqlserver://172.17.38.15\\MSSQLSERVER:1433;databaseName=hamachiSushi";
+    private static final String url="jdbc:sqlserver://172.17.38.14\\MSSQLSERVER:1433;databaseName=hamachiSushi";
     private static final String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
     private static final String user="sa";
     private static final String clave="123456";
