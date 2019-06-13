@@ -86,6 +86,14 @@ li{
   background-size: cover;
   
 }
+#card2 {
+  padding: 13% 2%;
+  background-image: url(../img/bg_logged.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
 #section-text{
   padding-top: 7%;
   text-shadow: 1px 4px 3px rgba(0,0,0, .4),

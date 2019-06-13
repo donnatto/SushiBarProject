@@ -32,7 +32,7 @@
                         </button>
                     </div>
                     <div class="modal-body pl-4">
-                        <form action="" method="POST">
+                        <form action="system.jsp" method="POST">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="usuario">Usuario</label>
