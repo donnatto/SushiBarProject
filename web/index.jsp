@@ -66,7 +66,7 @@
                     </div>
                     <div class="modal-body">
                         <form action="" method="POST">
-                            <div class="form-row">
+                     q         <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="nombre">Nombre</label>
                                     <input type="text" class="form-control" id="nombre" name="txtUsuarioNombre" placeholder="Nombre" required>
@@ -136,7 +136,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="" method="POST">
+                                        <form action="reservacontroller.do" method="POST">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="nombre">Nombre</label>
@@ -144,7 +144,7 @@
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="apellido">Apellidos</label>
-                                                    <input type="text" class="form-control" id="apellidos" name="txtReservaApellidos" placeholder="Apellidos" required>
+                                                    <input type="text" class="form-control" id="apellidos" name="txtReservaApellido" placeholder="Apellidos" required>
                                                 </div>
                                             </div>
                                             <div class="form-row">
@@ -154,7 +154,7 @@
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="hora">Hora</label>
-                                                    <select class="form-control" id="hora">
+                                                    <select class="form-control" name="txtReservaHora" id="hora">
                                                         <option value="2">2 pm</option>
                                                         <option value="3">3 pm</option>
                                                         <option value="4">4 pm</option>
@@ -174,7 +174,7 @@
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="nroContacto">Nro de Contacto</label>
-                                                    <input type="text" class="form-control" id="nroContacto" name="txtReservaNro" placeholder="Telf/Celular" required>
+                                                    <input type="text" class="form-control" id="nroContacto" name="txtReservaTelefono" placeholder="Telf/Celular" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
