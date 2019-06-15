@@ -32,7 +32,7 @@
                         </button>
                     </div>
                     <div class="modal-body pl-4">
-                        <form action="system.jsp" method="POST">
+                        <form action="usuariocontroller.do?accion=login" method="POST">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="usuario">Usuario</label>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="contraseña">Contraseña</label>
-                                    <input type="text" class="form-control" name="contraseña" id="contraseña" placeholder="Ingresa tu contraseña" required>
+                                    <input type="text" class="form-control" name="clave" id="contraseña" placeholder="Ingresa tu contraseña" required>
                                     <small class="form-text text-muted">Si no tiene su contraseña, genere una <a class="text-success" data-toggle="modal" data-target="#modalUsuarioNuevo" href="#modalUsuarioNuevo">aqui</a></small>
                                 </div>
                             </div>
@@ -65,20 +65,20 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="POST">
-                            <div class="form-row">
+                        <form action="#" method="POST">
+                              <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                    <label for="nombreNuevo">Nombre</label>
+                                    <input type="text" class="form-control" id="nombreNuevo" name="txtUsuarioNombre" placeholder="Nombre" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="apellido">Apellidos</label>
-                                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+                                    <label for="apellidosNuevo">Apellidos</label>
+                                    <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioClave" placeholder="Apellidos" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="correo">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="correo" placeholder="Dirección de correo electrónico" required>
+                                <label for="correoNuevo">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correoNuevo" name="txtUsuarioCorreo" placeholder="Dirección de correo electrónico" required>
                             </div>
                             <div class="form-group">
                                 <label for="cargo">Area</label>
@@ -90,8 +90,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="contraseña">Contraseña</label>
-                                <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+                                <label for="contraseñaNuevo">Contraseña</label>
+                                <input type="password" class="form-control" name="txtUsuarioClave" id="contraseñaNuevo" placeholder="Contraseña" required>
                             </div>  
                             <div class="form-group">
                                 <label for="codigoTrabajador">Codigo de Trabajador</label>
@@ -136,25 +136,25 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="" method="POST">
+                                        <form action="reservacontroller.do" method="POST">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="nombre">Nombre</label>
-                                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                                                    <label for="nombreReserva">Nombre</label>
+                                                    <input type="text" class="form-control" id="nombreReserva" name="txtReservaNombre" placeholder="Nombre" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="apellido">Apellidos</label>
-                                                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+                                                    <label for="apellidosReserva">Apellidos</label>
+                                                    <input type="text" class="form-control" id="apellidosReserva" name="txtReservaApellido" placeholder="Apellidos" required>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="fecha">Fecha</label>
-                                                    <input type="date" class="form-control" id="fecha" required>
+                                                    <label for="fechaReserva">Fecha</label>
+                                                    <input type="date" class="form-control" id="fechaReserva" name="txtReservaFecha" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="hora">Hora</label>
-                                                    <select class="form-control" id="hora">
+                                                    <select class="form-control" name="txtReservaHora" id="hora">
                                                         <option value="2">2 pm</option>
                                                         <option value="3">3 pm</option>
                                                         <option value="4">4 pm</option>
@@ -170,16 +170,16 @@
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="cantidad">Cantidad de comensales</label>
-                                                    <input type="text" class="form-control" id="cantidad" placeholder="Nro. de comensales" required>
+                                                    <input type="text" class="form-control" id="cantidad" name="txtReservaCantidad"  placeholder="Nro. de comensales" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="nroContacto">Nro de Contacto</label>
-                                                    <input type="text" class="form-control" id="nroContacto" placeholder="Telf/Celular" required>
+                                                    <input type="text" class="form-control" id="nroContacto" name="txtReservaTelefono" placeholder="Telf/Celular" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label for="correo">Correo Electrónico</label>
-                                                <input type="email" class="form-control" id="correo" placeholder="Dirección de correo electrónico" required>
+                                                <input type="email" class="form-control" id="correo" name="txtReservaCorreo" placeholder="Dirección de correo electrónico" required>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
@@ -489,13 +489,13 @@
                                         <p>¿Te gustaría trabajar con nosotros? Adjunta tu CV y cuéntanos un poco de ti.</p>
                                         <form action="" method="POST">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="nombreAplicante" placeholder="Nombres">
+                                                <input type="text" class="form-control" id="nombreAplicante" name="txtPostNombre" placeholder="Nombres">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="correoAplicante" placeholder="Correo Electrónico">
+                                                <input type="text" class="form-control" id="correoAplicante" name="txtPostCorreo" placeholder="Correo Electrónico">
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="telefonoAplicante" placeholder="Nro de Contacto">
+                                                <input type="text" class="form-control" id="telefonoAplicante" name="txtPostTelefono" placeholder="Nro de Contacto">
                                             </div>
                                             <div class="form-group">
                                                 <div class="custom-file">
@@ -503,7 +503,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <textarea name="" id="mensajeAplicante" rows="4" class="form-control"
+                                                <textarea name="txtPostMensaje" id="mensajeAplicante" rows="4" class="form-control"
                                                           placeholder="Cuéntanos un poco sobre ti"></textarea>
                                             </div>
                                         </form>
@@ -534,16 +534,16 @@
                     <div class="col-md-6 pr-md-5">
                         <form action="#" id="form-contacto">
                             <div class="form-group">
-                                <input type="text" class="form-control px-3 py-3" placeholder="Nombre" required>
+                                <input type="text" class="form-control px-3 py-3" name="txtContactoNombre" placeholder="Nombre" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control px-3 py-3" placeholder="Correo Electrónico" required>
+                                <input type="email" class="form-control px-3 py-3" name="txtContactoCorreo" placeholder="Correo Electrónico" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control px-3 py-3" placeholder="Asunto" required>
+                                <input type="text" class="form-control px-3 py-3" name="txtContactoAsunto" placeholder="Asunto" required>
                             </div>
                             <div class="form-group">
-                                <textarea name=""  cols="30" rows="7" class="form-control px-3 py-3"
+                                <textarea name=""  cols="30" rows="7" class="form-control px-3 py-3" name="txtContactoMensaje"
                                           placeholder="Mensaje" required></textarea>
                             </div>
                             <div class="form-group">

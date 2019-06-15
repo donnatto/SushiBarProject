@@ -68,17 +68,17 @@
                         <form action="#" method="POST">
                               <div class="form-row">
                                 <div class="form-group col-md-6">
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" name="txtUsuarioNombre" placeholder="Nombre" required>
+                                    <label for="nombreNuevo">Nombre</label>
+                                    <input type="text" class="form-control" id="nombreNuevo" name="txtUsuarioNombre" placeholder="Nombre" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="apellido">Apellidos</label>
-                                    <input type="text" class="form-control" id="apellidos" name="txtUsuarioClave" placeholder="Apellidos" required>
+                                    <label for="apellidosNuevo">Apellidos</label>
+                                    <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioClave" placeholder="Apellidos" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="correo">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="correo" name="txtUsuarioCorreo" placeholder="Dirección de correo electrónico" required>
+                                <label for="correoNuevo">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correoNuevo" name="txtUsuarioCorreo" placeholder="Dirección de correo electrónico" required>
                             </div>
                             <div class="form-group">
                                 <label for="cargo">Area</label>
@@ -90,8 +90,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="contraseña">Contraseña</label>
-                                <input type="password" class="form-control" name="txtUsuarioClave" id="contraseña" placeholder="Contraseña" required>
+                                <label for="contraseñaNuevo">Contraseña</label>
+                                <input type="password" class="form-control" name="txtUsuarioClave" id="contraseñaNuevo" placeholder="Contraseña" required>
                             </div>  
                             <div class="form-group">
                                 <label for="codigoTrabajador">Codigo de Trabajador</label>
@@ -139,18 +139,18 @@
                                         <form action="reservacontroller.do" method="POST">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="nombre">Nombre</label>
-                                                    <input type="text" class="form-control" id="nombre" name="txtReservaNombre" placeholder="Nombre" required>
+                                                    <label for="nombreReserva">Nombre</label>
+                                                    <input type="text" class="form-control" id="nombreReserva" name="txtReservaNombre" placeholder="Nombre" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="apellido">Apellidos</label>
-                                                    <input type="text" class="form-control" id="apellidos" name="txtReservaApellido" placeholder="Apellidos" required>
+                                                    <label for="apellidosReserva">Apellidos</label>
+                                                    <input type="text" class="form-control" id="apellidosReserva" name="txtReservaApellido" placeholder="Apellidos" required>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="fecha">Fecha</label>
-                                                    <input type="date" class="form-control" id="fecha" name="txtReservaFecha" required>
+                                                    <label for="fechaReserva">Fecha</label>
+                                                    <input type="date" class="form-control" id="fechaReserva" name="txtReservaFecha" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="hora">Hora</label>

@@ -1,3 +1,6 @@
+use master
+go
+
 create database hamachiSushi
 go
 
@@ -24,8 +27,7 @@ create table Usuario(
 	contraseña varchar(30) not null
 )
 go
-drop table Postulante
-go
+
 create table Postulante(
 	id int identity not null,
 	nombre varchar(30) not null,

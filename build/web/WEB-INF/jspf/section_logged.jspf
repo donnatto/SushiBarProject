@@ -1,0 +1,16 @@
+<div>
+  <section id="card2">
+
+    <div class="container h-100">
+      <div class="row">
+        <div class="col-md-10 offset-md-2  col-lg-7 offset-lg-5">
+          <h1 class="text-white" id="section-text">
+            Bienvenido a nuestro Sistema de Gestion
+          </h1>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+</div>
