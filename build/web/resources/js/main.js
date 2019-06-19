@@ -28,8 +28,4 @@ $(document).ready(function () {
     $(".img-hover img").css("filter", "blur(0px)");
   });//enfocar/desenfocar imagenes carta.
 
-
-
-
-
 });

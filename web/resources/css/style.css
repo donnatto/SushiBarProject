@@ -92,7 +92,13 @@ li{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
+}
+#card3 {
+  padding: 13% 2%;
+  background-image: url(../img/bg_error.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #section-text{
   padding-top: 7%;

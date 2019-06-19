@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<% String nombre = (String)request.getSession().getAttribute("nombre"); %>
 <html>
 
     <head>
@@ -14,17 +15,17 @@
         <%@include file="WEB-INF/jspf/styles.jspf" %>
         <link href="resources/css/style.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/png" href="resources/img/favico.png" />
-        <title>Hamachi Sushi Bar</title>
+        <title>Hamachi Sushi Bar - Sistema</title>
     </head>
     
     <body data-spy="scroll" data-target=".navbar" >
-        <%@include file="WEB-INF/jspf/nav.jspf" %>
-        <%@include file="WEB-INF/jspf/section_logged.jspf" %>
+        <%@include file="WEB-INF/jspf/nav_system.jspf" %>
+        <%@include file="WEB-INF/jspf/section_system.jspf" %>
         
         <div class="container">
                 <div class="row mt-5">
                     <div class="col-md-12">
-                        <h2>Como estás?</h2>
+                        <h2>Como estás <%=nombre%>?</h2>
                         <p class="mt-2">Estas son las herramientas para la gestión del restaurant.</p>
                         
                     </div>

@@ -52,7 +52,8 @@ public class UsuarioController extends HttpServlet {
               request.getRequestDispatcher("system.jsp").forward(request, response);
             }
             else{
-            
+                String respuesta = ("Usuario o clave incorrecta");
+                request.getSession().setAttribute("respuesta", respuesta);
                 request.getRequestDispatcher("error.jsp").forward(request, response);
             }
             
@@ -62,7 +63,7 @@ public class UsuarioController extends HttpServlet {
             sessionOK.removeAttribute("correo");
             sessionOK.removeAttribute("area");
             sessionOK.invalidate();
-            request.getRequestDispatcher("cerrar.jsp").forward(request, response);
+            request.getRequestDispatcher("index.jsp").forward(request, response);
         }
         
         

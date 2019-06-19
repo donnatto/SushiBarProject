@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.hamachisushi.model.Reserva;
 import com.hamachisushi.daos.ReservaDAO;
+import javafx.scene.control.Alert;
 
 /**
  *
@@ -39,19 +40,27 @@ public class ReservaController extends HttpServlet {
         String apellido = request.getParameter("txtReservaApellido");
         String fecha = request.getParameter("txtReservaFecha");
         String hora = request.getParameter("txtReservaHora");
-        int comensales = 2;
+        int comensales = Integer.parseInt(request.getParameter("txtReservaCantidad"));
         String telefono = request.getParameter("txtReservaTelefono");
         String correo = request.getParameter("txtReservaCorreo");
-        
         
                 
         Reserva reserva = new Reserva(nombre, apellido, fecha, hora, comensales,
             telefono, correo);
         
         ReservaDAO reservaDAO = new ReservaDAO();
-        reservaDAO.sql_insert(reserva);
+        if(reservaDAO.sql_insert(reserva) == true){
+          String respuesta = ("Reserva realizada correctamente");
+          request.getSession().setAttribute("respuesta", respuesta);
+          request.getRequestDispatcher("index.jsp").forward(request, response);  
+        }
+        else{
+          String respuesta = ("La reserva no pudo ser realizada, inténtelo nuevamente.");
+          request.getSession().setAttribute("respuesta", respuesta);
+          request.getRequestDispatcher("error.jsp").forward(request, response);
+        }
         
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
