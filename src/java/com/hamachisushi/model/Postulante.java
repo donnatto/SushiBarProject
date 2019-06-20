@@ -12,14 +12,14 @@ package com.hamachisushi.model;
 public class Postulante {
     
     private String nombre;
-    private String apellido;
-    private String numero;
+    private String correo;
+    private String telefono;
     private String descripcion;
 
-    public Postulante(String nombre, String apellido, String numero, String descripcion) {
+    public Postulante(String nombre, String correo, String telefono, String descripcion) {
         this.nombre = nombre;
-        this.apellido = apellido;
-        this.numero = numero;
+        this.correo = correo;
+        this.telefono = telefono;
         this.descripcion = descripcion;
     }
 
@@ -31,20 +31,20 @@ public class Postulante {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public String getDescripcion() {

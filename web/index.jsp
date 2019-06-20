@@ -497,7 +497,7 @@
                   </div>
                   <div class="modal-body">
                     <p>¿Te gustaría trabajar con nosotros? Adjunta tu CV y cuéntanos un poco de ti.</p>
-                    <form action="" method="POST">
+                    <form action="postulantecontroller.do" method="POST">
                       <div class="form-group">
                         <input type="text" class="form-control" id="nombreAplicante" name="txtPostNombre" placeholder="Nombres">
                       </div>
@@ -516,12 +516,13 @@
                         <textarea name="txtPostMensaje" id="mensajeAplicante" rows="4" class="form-control"
                                   placeholder="Cuéntanos un poco sobre ti"></textarea>
                       </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
                     </form>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-success">Enviar</button>
-                  </div>
+                  
                 </div>
               </div>
             </div>

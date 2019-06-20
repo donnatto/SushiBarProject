@@ -12,7 +12,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import com.hamachisushi.model.Postulante;
+import com.hamachisushi.daos.PostulanteDAO;
 /**
  *
  * @author Alumno
@@ -32,17 +33,23 @@ public class PostulanteController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet PostulanteController</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet PostulanteController at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+        
+        String nombre = request.getParameter("txtPostNombre");
+        String correo = request.getParameter("txtPostCorreo");
+        String telefono = request.getParameter("txtPostTelefono");
+        String mensaje = request.getParameter("txtPostMensaje");
+        
+        Postulante postulante = new Postulante(nombre, correo, telefono, mensaje);
+        PostulanteDAO postulanteDAO = new PostulanteDAO();
+        
+        if (postulanteDAO.sql_insert(postulante) == true) {
+            String respuesta = ("Aplicación realizada correctamente");
+            request.getSession().setAttribute("respuesta", respuesta);
+            request.getRequestDispatcher("index.jsp").forward(request, response);
+        } else {
+            String respuesta = ("La aplicación no se registró correctamente, inténtelo nuevamente.");
+            request.getSession().setAttribute("respuesta", respuesta);
+            request.getRequestDispatcher("error.jsp").forward(request, response);
         }
     }
 
