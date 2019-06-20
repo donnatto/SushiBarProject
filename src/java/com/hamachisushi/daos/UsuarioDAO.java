@@ -19,6 +19,7 @@ public class UsuarioDAO {
     private static ResultSet res = null;
     private static ConexionBD con = ConexionBD.instanciar();
     private static final String SQL_LOGIN = "select * from usuario where correo=? and contraseña=? ";
+    private static final String SQL_INSERT = "insert into usuario values ?, ?, ?, ?, ?";
     
     public Usuario login(Usuario usuario){
         Usuario usuario1 = null;
@@ -42,6 +43,32 @@ public class UsuarioDAO {
      return usuario1;   
     }
     
+    public boolean register(Usuario u) {
+        
+        boolean result = false;
+        try {
+            
+             pstm=con.getCon().prepareStatement(SQL_INSERT);
+             pstm.setString(1, u.getNombre());
+             pstm.setString(2, u.getApellido());
+             pstm.setString(3, u.getCorreo());
+             pstm.setString(4, u.getArea());
+             pstm.setString(5, u.getClave());
+                         
+             if(pstm.executeUpdate()>0){
+              result=true;
+             }
+            
+        } catch (Exception e) {
+            System.out.println("Error al insertar :"+e.getMessage());
+            e.printStackTrace();
+        }
+        finally{
+         cerrarConexion();
+        }
+        return result;
+    }
+            
     private void cerrarConexion(){
         try {
             if(res!=null)res.close();
