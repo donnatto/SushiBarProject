@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="ftco-navbar">
   <div class="container">
     <a class="navbar-brand" href="system.jsp">Sistema de Gestion</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
