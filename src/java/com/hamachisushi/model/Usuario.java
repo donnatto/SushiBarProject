@@ -23,6 +23,15 @@ public class Usuario {
         this.clave = clave;
     }
 
+    public Usuario(String nombre, String apellido, String correo, String area, String clave) {
+        
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.area = area;
+        this.clave = clave;
+    }
+
     public Usuario(int id, String nombre, String apellido, String correo, String area, String clave) {
         this.id = id;
         this.nombre = nombre;
@@ -31,6 +40,8 @@ public class Usuario {
         this.area = area;
         this.clave = clave;
     }
+    
+    
 
     public int getId() {
         return id;
