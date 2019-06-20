@@ -6,7 +6,7 @@
         <p class="mb-5" id="txtf1">Si eres también un amante de la comida nikkei, unete a nuestra
           comunidad que busca seguir dando a conocer esta creciente cultura culinaria.
         </p>
-        <p><a href="#" class="btn btn-success px-4 py-3">Comunidad Nikkei</a></p>
+        <p><a href="http://www.apj.org.pe/" target="_blank" class="btn btn-success px-4 py-3">Comunidad Nikkei</a></p>
       </div><!-- Unete -->
       
       <div class="col-md-6 col-lg-4 d-none d-md-block">
