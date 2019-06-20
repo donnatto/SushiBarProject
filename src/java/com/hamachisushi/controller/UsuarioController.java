@@ -57,7 +57,29 @@ public class UsuarioController extends HttpServlet {
                 request.getRequestDispatcher("error.jsp").forward(request, response);
             }
             
+        } else if (accion.equals("registrar")){
+            
+            String nombre = request.getParameter("txtUsuarioNombre");
+            String apellido = request.getParameter("txtUsuarioApellido");
+            String correo = request.getParameter("txtUsuarioCorreo");
+            String area = request.getParameter("cargo");
+            String clave = request.getParameter("txtUsuarioClave");
+            
+            Usuario usuario = new Usuario(nombre, apellido, correo, area, clave);
+            UsuarioDAO usuarioDAO = new UsuarioDAO();
+            
+            if (usuarioDAO.register(usuario) == true) {
+                String respuesta = ("Usuario registrado correctamente");
+                request.getSession().setAttribute("respuesta", respuesta);
+                request.getRequestDispatcher("index.jsp").forward(request, response);  
+            }
+            else{
+                String respuesta = ("El usuario no se registró, inténtelo nuevamente.");
+                request.getSession().setAttribute("respuesta", respuesta);
+                request.getRequestDispatcher("error.jsp").forward(request, response);
+            }
         } else if (accion.equals("cerrar")){
+            
             sessionOK.removeAttribute("nombre");
             sessionOK.removeAttribute("apellido");
             sessionOK.removeAttribute("correo");

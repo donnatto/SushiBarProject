@@ -16,10 +16,11 @@ public class Contacto {
     private String asunto;
     private String mensaje;
 
-    public Contacto(String nombre, String correo, String asunto) {
+    public Contacto(String nombre, String correo, String asunto, String mensaje) {
         this.nombre = nombre;
         this.correo = correo;
         this.asunto = asunto;
+        this.mensaje = mensaje;
     }
 
     public String getNombre() {
@@ -53,6 +54,5 @@ public class Contacto {
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
     
 }

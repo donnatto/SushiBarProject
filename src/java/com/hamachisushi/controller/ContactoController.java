@@ -12,14 +12,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.hamachisushi.model.Postulante;
-import com.hamachisushi.daos.PostulanteDAO;
+import com.hamachisushi.model.Contacto;
+import com.hamachisushi.daos.ContactoDAO;
 /**
  *
- * @author Alumno
+ * @author migue
  */
-@WebServlet(name = "PostulanteController", urlPatterns = {"/postulantecontroller.do"})
-public class PostulanteController extends HttpServlet {
+@WebServlet(name = "ContactoController", urlPatterns = {"/contactocontroller.do"})
+public class ContactoController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,20 +34,20 @@ public class PostulanteController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        String nombre = request.getParameter("txtPostNombre");
-        String correo = request.getParameter("txtPostCorreo");
-        String telefono = request.getParameter("txtPostTelefono");
-        String mensaje = request.getParameter("txtPostMensaje");
+        String nombre = request.getParameter("txtContactoNombre");
+        String correo = request.getParameter("txtContactoCorreo");
+        String asunto = request.getParameter("txtContactoAsunto");
+        String mensaje = request.getParameter("txtContactoMensaje");
         
-        Postulante postulante = new Postulante(nombre, correo, telefono, mensaje);
-        PostulanteDAO postulanteDAO = new PostulanteDAO();
+        Contacto contacto = new Contacto(nombre, correo, asunto, mensaje);
+        ContactoDAO contactoDAO = new ContactoDAO();
         
-        if (postulanteDAO.sql_insert(postulante) == true) {
-            String respuesta = ("Aplicación realizada correctamente");
+        if (contactoDAO.sql_insert(contacto) == true) {
+            String respuesta = ("Mensaje enviado correctamente");
             request.getSession().setAttribute("respuesta", respuesta);
             request.getRequestDispatcher("index.jsp").forward(request, response);
         } else {
-            String respuesta = ("La aplicación no se registró correctamente, inténtelo nuevamente.");
+            String respuesta = ("El mensaje no se envió correctamente, inténtelo nuevamente.");
             request.getSession().setAttribute("respuesta", respuesta);
             request.getRequestDispatcher("error.jsp").forward(request, response);
         }
