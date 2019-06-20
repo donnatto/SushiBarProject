@@ -66,7 +66,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="#" method="POST">
+            <form action="usuariocontroller.do?accion=registrar" method="POST">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="nombreNuevo">Nombre</label>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="apellidosNuevo">Apellidos</label>
-                  <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioClave" placeholder="Apellidos" required>
+                  <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioApellido" placeholder="Apellidos" required>
                 </div>
               </div>
               <div class="form-group">
@@ -497,7 +497,7 @@
                   </div>
                   <div class="modal-body">
                     <p>¿Te gustaría trabajar con nosotros? Adjunta tu CV y cuéntanos un poco de ti.</p>
-                    <form action="" method="POST">
+                    <form action="postulantecontroller.do" method="POST">
                       <div class="form-group">
                         <input type="text" class="form-control" id="nombreAplicante" name="txtPostNombre" placeholder="Nombres">
                       </div>
@@ -516,12 +516,13 @@
                         <textarea name="txtPostMensaje" id="mensajeAplicante" rows="4" class="form-control"
                                   placeholder="Cuéntanos un poco sobre ti"></textarea>
                       </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
                     </form>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-success">Enviar</button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -542,7 +543,7 @@
 
         <div class="row contacto">
           <div class="col-md-6 pr-md-5">
-            <form action="#" id="form-contacto">
+            <form action="contactocontroller.do" id="form-contacto">
               <div class="form-group">
                 <input type="text" class="form-control px-3 py-3" name="txtContactoNombre" placeholder="Nombre" required>
               </div>
@@ -553,7 +554,7 @@
                 <input type="text" class="form-control px-3 py-3" name="txtContactoAsunto" placeholder="Asunto" required>
               </div>
               <div class="form-group">
-                <textarea name=""  cols="30" rows="7" class="form-control px-3 py-3" name="txtContactoMensaje"
+                <textarea cols="30" rows="7" class="form-control px-3 py-3" name="txtContactoMensaje"
                           placeholder="Mensaje" required></textarea>
               </div>
               <div class="form-group">

@@ -16,8 +16,7 @@ import java.sql.ResultSet;
  */
 public class ContactoDAO {
     
-    private static final String sql_insertReserva="insert into  "
-            + "(nombre, apellidos, nro_Contacto, descripcion)"
+    private static final String sql_insertReserva="insert into contacto"
             + " values(?,?,?,?)";
     
     private PreparedStatement pstm=null;
@@ -29,7 +28,9 @@ public class ContactoDAO {
         try {
              pstm=con.getCon().prepareStatement(sql_insertReserva);
              pstm.setString(1, t.getNombre());
-             
+             pstm.setString(2, t.getCorreo());
+             pstm.setString(3, t.getAsunto());
+             pstm.setString(4, t.getMensaje());            
                        
              if(pstm.executeUpdate()>0){
               result=true;

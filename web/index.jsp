@@ -543,7 +543,7 @@
 
         <div class="row contacto">
           <div class="col-md-6 pr-md-5">
-            <form action="#" id="form-contacto">
+            <form action="contactocontroller.do" id="form-contacto">
               <div class="form-group">
                 <input type="text" class="form-control px-3 py-3" name="txtContactoNombre" placeholder="Nombre" required>
               </div>
@@ -554,7 +554,7 @@
                 <input type="text" class="form-control px-3 py-3" name="txtContactoAsunto" placeholder="Asunto" required>
               </div>
               <div class="form-group">
-                <textarea name=""  cols="30" rows="7" class="form-control px-3 py-3" name="txtContactoMensaje"
+                <textarea cols="30" rows="7" class="form-control px-3 py-3" name="txtContactoMensaje"
                           placeholder="Mensaje" required></textarea>
               </div>
               <div class="form-group">

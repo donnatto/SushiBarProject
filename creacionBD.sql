@@ -6,6 +6,7 @@ go
 
 use hamachiSushi
 go
+
 create table Reserva(
 	id int identity not null,
 	nombre varchar(30) not null,
