@@ -66,7 +66,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="#" method="POST">
+            <form action="usuariocontroller.do?accion=registrar" method="POST">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="nombreNuevo">Nombre</label>
