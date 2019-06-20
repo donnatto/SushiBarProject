@@ -2,6 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/build.xml</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/web/index.jsp</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/controller/PostulanteController.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/controller/UsuarioController.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/model/Contacto.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/controller/ReservaController.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/conf/MANIFEST.MF</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/daos/ContactoDAO.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/nbproject/private/private.xml</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/nbproject/project.xml</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/connexion/ConexionBD.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/model/Postulante.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/controller/ContactoController.java</file>
+            <file>file:/C:/Users/migue/des-emp/sushibar-jsp/src/java/com/hamachisushi/daos/PostulanteDAO.java</file>
+        </group>
     </open-files>
 </project-private>
