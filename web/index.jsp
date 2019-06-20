@@ -74,7 +74,7 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="apellidosNuevo">Apellidos</label>
-                  <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioClave" placeholder="Apellidos" required>
+                  <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioApellido" placeholder="Apellidos" required>
                 </div>
               </div>
               <div class="form-group">
