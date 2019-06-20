@@ -19,7 +19,7 @@ public class UsuarioDAO {
     private static ResultSet res = null;
     private static ConexionBD con = ConexionBD.instanciar();
     private static final String SQL_LOGIN = "select * from usuario where correo=? and contraseña=? ";
-    private static final String SQL_INSERT = "insert into usuario values ?, ?, ?, ?, ?";
+    private static final String SQL_INSERT = "insert into usuario values (?, ?, ?, ?, ?)";
     
     public Usuario login(Usuario usuario){
         Usuario usuario1 = null;
