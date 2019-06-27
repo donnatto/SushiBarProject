@@ -100,11 +100,27 @@ li{
   background-position: center;
   background-size: cover;
 }
+#card-reserva{
+  padding: 13% 2%;
+  background-image: url(../img/bg_reserva.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #section-text{
   padding-top: 7%;
   text-shadow: 1px 4px 3px rgba(0,0,0, .4),
                1px 8px 13px rgba(0,0,0, .1),
                1px 18px 23px rgba(0,0,0, .1);
+}
+#section-text-system{
+  padding-top: 7%;
+  padding-bottom: 10%;
+  text-shadow: 1px 5px 5px rgba(0,0,0, .7),
+               1px 8px 13px rgba(0,0,0, .1),
+               1px 18px 23px rgba(0,0,0, .1);
+  font-family: 'Poppins';
+  font-size: 3rem;
 }
 .media-body{
   padding: 0 20px;

@@ -43,11 +43,11 @@ public class PostulanteController extends HttpServlet {
         PostulanteDAO postulanteDAO = new PostulanteDAO();
         
         if (postulanteDAO.sql_insert(postulante) == true) {
-            String respuesta = ("Aplicación realizada correctamente");
+            String respuesta = ("Aplicacion realizada correctamente");
             request.getSession().setAttribute("respuesta", respuesta);
             request.getRequestDispatcher("index.jsp").forward(request, response);
         } else {
-            String respuesta = ("La aplicación no se registró correctamente, inténtelo nuevamente.");
+            String respuesta = ("La aplicacion no se registro correctamente, intentelo nuevamente.");
             request.getSession().setAttribute("respuesta", respuesta);
             request.getRequestDispatcher("error.jsp").forward(request, response);
         }
