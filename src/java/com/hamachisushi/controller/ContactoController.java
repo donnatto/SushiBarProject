@@ -47,7 +47,7 @@ public class ContactoController extends HttpServlet {
             request.getSession().setAttribute("respuesta", respuesta);
             request.getRequestDispatcher("index.jsp").forward(request, response);
         } else {
-            String respuesta = ("El mensaje no se envió correctamente, inténtelo nuevamente.");
+            String respuesta = ("El mensaje no se envio correctamente, intentelo nuevamente.");
             request.getSession().setAttribute("respuesta", respuesta);
             request.getRequestDispatcher("error.jsp").forward(request, response);
         }

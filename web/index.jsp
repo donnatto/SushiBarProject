@@ -156,15 +156,15 @@
                         <div class="form-group col-md-6">
                           <label for="hora">Hora</label>
                           <select class="form-control" name="txtReservaHora" id="hora">
-                            <option value="2">2 pm</option>
-                            <option value="3">3 pm</option>
-                            <option value="4">4 pm</option>
-                            <option value="5">5 pm</option>
-                            <option value="6">6 pm</option>
-                            <option value="7">7 pm</option>
-                            <option value="8">8 pm</option>
-                            <option value="9">9 pm</option>
-                            <option value="10">10 pm</option>
+                            <option value="14:00">2 pm</option>
+                            <option value="15:00">3 pm</option>
+                            <option value="16:00">4 pm</option>
+                            <option value="17:00">5 pm</option>
+                            <option value="18:00">6 pm</option>
+                            <option value="19:00">7 pm</option>
+                            <option value="20:00">8 pm</option>
+                            <option value="21:00">9 pm</option>
+                            <option value="22:00">10 pm</option>
                           </select>
                         </div>
                       </div>
@@ -218,57 +218,57 @@
         <!--Galería -->
         <div class="row no-gutters">
           <div class="col-md-4">
-            <a href="resources/img/g_1.jpg" class=" img-hover">
+            <a href="resources/img/g_1.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_1.jpg" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4">
-            <a href="resources/img/g_2.jpg" class=" img-hover">
+            <a href="resources/img/g_2.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_2.jpg" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4">
-            <a href="resources/img/g_3.jpg" class=" img-hover">
+            <a href="resources/img/g_3.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_3.jpg" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4">
-            <a href="resources/img/g_4.jpg" class=" img-hover">
+            <a href="resources/img/g_4.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_4.jpg" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
 
           <div class="col-md-4">
-            <a href="resources/img/g_5.jpg" class=" img-hover">
+            <a href="resources/img/g_5.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_5.jpg" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4">
-            <a href="resources/img/g_6.jpg" class=" img-hover">
+            <a href="resources/img/g_6.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_6.jpg" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
 
           <div class="col-md-4">
-            <a href="resources/img/g_7.jpg" class=" img-hover">
+            <a href="resources/img/g_7.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_7.jpg" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4">
-            <a href="resources/img/g_8.png" class=" img-hover">
+            <a href="resources/img/g_8.png" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_8.png" alt="Image placeholder" class="img-fluid">
             </a>
           </div>
           <div class="col-md-4">
-            <a href="resources/img/g_9.jpg" class=" img-hover">
+            <a href="resources/img/g_9.jpg" target="_blank" class=" img-hover">
               <span class="icon icon-search"></span>
               <img src="resources/img/g_9.jpg" alt="Image placeholder" class="img-fluid">
             </a>

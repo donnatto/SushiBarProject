@@ -43,7 +43,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-3 card-2">
-            <a href="#"><img class="card-img-top" src="resources/img/img_reserva.jpeg" alt="Image placeholder"></a>
+            <a href="listacontroller.do"><img class="card-img-top" src="resources/img/img_reserva.jpeg" alt="Image placeholder"></a>
             <div class="card-body">
               <h3 class="card-title"><a href="#"></a>Gestión de Reservas</h3>
               <p class="card-text">Gestiona las reservas existentes por parte de nuestros clientes. </p>

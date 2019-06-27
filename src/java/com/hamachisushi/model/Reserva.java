@@ -10,80 +10,110 @@ package com.hamachisushi.model;
  * @author Alumno
  */
 public class Reserva {
-    
-    private String nombre;
-    private String apellido;
-    private String fecha;
-    private String hora;
-    private int comensales;
-    private String telefono;
-    private String correo;
 
-    public Reserva(String nombre, String apellido, String fecha, String hora, int comensales,String telefono, String correo) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fecha = fecha;
-        this.hora = hora;
-        this.comensales = comensales;
-        this.telefono = telefono;
-        this.correo = correo;
-    }
+  private int id;
+  private String nombre;
+  private String apellido;
+  private String fecha;
+  private String hora;
+  private int comensales;
+  private String telefono;
+  private String correo;
+  private int estado;
 
-    public String getNombre() {
-        return nombre;
-    }
+  public Reserva(String nombre, String apellido, String fecha, String hora, int comensales, String telefono, String correo, int estado) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.fecha = fecha;
+    this.hora = hora;
+    this.comensales = comensales;
+    this.telefono = telefono;
+    this.correo = correo;
+    this.estado = estado;
+  }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+  public Reserva(int id, String nombre, String apellido, String fecha, String hora, int comensales, String telefono, String correo, int estado) {
+    this.id = id;
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.fecha = fecha;
+    this.hora = hora;
+    this.comensales = comensales;
+    this.telefono = telefono;
+    this.correo = correo;
+    this.estado = estado;
+  }
 
-    public String getApellido() {
-        return apellido;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public String getFecha() {
-        return fecha;
-    }
+  public String getNombre() {
+    return nombre;
+  }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
-    }
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
 
-    public String getHora() {
-        return hora;
-    }
+  public String getApellido() {
+    return apellido;
+  }
 
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
+  public void setApellido(String apellido) {
+    this.apellido = apellido;
+  }
 
-    public int getComensales() {
-        return comensales;
-    }
+  public String getFecha() {
+    return fecha;
+  }
 
-    public void setComensales(int comensales) {
-        this.comensales = comensales;
-    }
+  public void setFecha(String fecha) {
+    this.fecha = fecha;
+  }
 
-    public String getTelefono() {
-        return telefono;
-    }
+  public String getHora() {
+    return hora;
+  }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
+  public void setHora(String hora) {
+    this.hora = hora;
+  }
 
-    public String getCorreo() {
-        return correo;
-    }
+  public int getComensales() {
+    return comensales;
+  }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-    
-    
+  public void setComensales(int comensales) {
+    this.comensales = comensales;
+  }
+
+  public String getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(String telefono) {
+    this.telefono = telefono;
+  }
+
+  public String getCorreo() {
+    return correo;
+  }
+
+  public void setCorreo(String correo) {
+    this.correo = correo;
+  }
+
+  public int getEstado() {
+    return estado;
+  }
+
+  public void setEstado(int estado) {
+    this.estado = estado;
+  }
+
 }

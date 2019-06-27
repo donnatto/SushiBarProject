@@ -74,7 +74,7 @@ public class UsuarioController extends HttpServlet {
                 request.getRequestDispatcher("index.jsp").forward(request, response);  
             }
             else{
-                String respuesta = ("El usuario no se registró, inténtelo nuevamente.");
+                String respuesta = ("El usuario no se registro, intentelo nuevamente.");
                 request.getSession().setAttribute("respuesta", respuesta);
                 request.getRequestDispatcher("error.jsp").forward(request, response);
             }

@@ -13,7 +13,7 @@ $(document).ready(function () {
   });//cambiar de color nav al achicar pantalla
 
   $(window).scroll(function () {
-    $("nav").toggleClass("scrolled", $(this).scrollTop() > 630);
+    $("nav").toggleClass("scrolled", $(this).scrollTop() > 550);
   });//cambiar de color nav
 
   $('.navbar-nav>li>a').on('click', function () {
@@ -29,3 +29,28 @@ $(document).ready(function () {
   });//enfocar/desenfocar imagenes carta.
 
 });
+
+function cambiarEstado(id, estado)
+{
+  $.ajax({
+    url: "reservaupdate.do",
+    data: {
+      id: id,
+      estado: estado
+    },
+    success: function (result) {
+      console.log(result);
+      if (result == 1)
+      {
+        $('.estado' + id).removeClass('table-warning table-danger');
+        $('.estado' + id).addClass('table-success');
+        $('.estado' + id).text('Confirmado');
+      } else
+      {
+        $('.estado' + id).removeClass('table-warning table-success');
+        $('.estado' + id).addClass('table-danger');
+        $('.estado' + id).text('Rechazado');
+      }
+    }
+  });
+}

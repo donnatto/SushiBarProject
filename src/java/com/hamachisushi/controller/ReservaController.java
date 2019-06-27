@@ -43,10 +43,11 @@ public class ReservaController extends HttpServlet {
         int comensales = Integer.parseInt(request.getParameter("txtReservaCantidad"));
         String telefono = request.getParameter("txtReservaTelefono");
         String correo = request.getParameter("txtReservaCorreo");
+        int estado = 0; //Antes de confirmar reserva.
         
                 
         Reserva reserva = new Reserva(nombre, apellido, fecha, hora, comensales,
-            telefono, correo);
+            telefono, correo, estado);
         
         ReservaDAO reservaDAO = new ReservaDAO();
         if(reservaDAO.sql_insert(reserva) == true){
@@ -55,10 +56,11 @@ public class ReservaController extends HttpServlet {
           request.getRequestDispatcher("index.jsp").forward(request, response);  
         }
         else{
-          String respuesta = ("La reserva no pudo ser realizada, inténtelo nuevamente.");
+          String respuesta = ("La reserva no pudo ser realizada, intentelo nuevamente.");
           request.getSession().setAttribute("respuesta", respuesta);
           request.getRequestDispatcher("error.jsp").forward(request, response);
         }
+        
         
         
     }
