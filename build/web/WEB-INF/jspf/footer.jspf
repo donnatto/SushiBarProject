@@ -16,7 +16,7 @@
             <img src="resources/img/img_1.jpg" alt="" class="img-fluid">
           </figure>
           <div class="text">
-            <h3 class="heading"><a href="#">¿Cómo preparar la mesa para comer sushi?</a></h3>
+            <h3 class="heading"><a href="https://centrevillelibrary.org/preparar-la-mesa-comer-sushi/" target="_blank">¿Cómo preparar la mesa para comer sushi?</a></h3>
             <div class="meta">
               <div> <script>
             document.write(new Date().toDateString());
@@ -31,7 +31,7 @@
             <img src="resources/img/img_2.jpg" alt="" class="img-fluid">
           </figure>
           <div class="text">
-            <h3 class="heading"><a href="#">Vivir 100 años es posible si sigues la dieta</a></h3>
+            <h3 class="heading"><a href="https://www.nuevamujer.com/wellness/2019/02/21/el-estilo-de-vida-de-los-japoneses-que-los-lleva-a-los-100-anos.html" target="_blank">Vivir 100 años es posible si sigues la dieta</a></h3>
             <div class="meta">
               <div><script>
             document.write(new Date().toDateString());
@@ -46,7 +46,7 @@
             <img src="resources/img/img_4.jpg" alt="" class="img-fluid">
           </figure>
           <div class="text">
-            <h3 class="heading"><a href="#">Cómo comer sushi correctamente</a></h3>
+            <h3 class="heading"><a href="https://blogs.20minutos.es/la-gulateca/2015/11/12/10-cosas-que-hay-que-saber-para-comer-sushi-correctamente/" target="_blank">Cómo comer sushi correctamente</a></h3>
             <div class="meta">
               <div><script>
             document.write(new Date().toDateString());

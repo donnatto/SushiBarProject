@@ -54,3 +54,22 @@ function cambiarEstado(id, estado)
     }
   });
 }
+
+function eliminarMensaje(id)
+{
+  $.ajax({
+    url: "contactoupdate.do",
+    data: {
+      id: id
+      
+    },
+    success: function (result) {
+      console.log(result);
+      if(result != false){
+        $('#row' + id).remove();
+      }else{
+        console.log("incorrecto");
+      }
+    }
+  });
+}

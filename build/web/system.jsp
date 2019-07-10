@@ -53,7 +53,7 @@
 
         <div class="col-md-4">
           <div class="card mb-3 card-2">
-            <a href="#"><img class="card-img-top" src="resources/img/img_postulantes.jpg" alt="Image placeholder"></a>
+            <a href="g_postulantes.jsp"><img class="card-img-top" src="resources/img/img_postulantes.jpg" alt="Image placeholder"></a>
             <div class="card-body">
               <h3 class="card-title"><a href="#"></a>Gestion de Postulantes</h3>
               <p class="card-text">Evalúa los CVs enviados por las personas que desean trabajar con nosotros.</p>
@@ -63,7 +63,7 @@
 
         <div class="col-md-4">
           <div class="card mb-3 card-2">
-            <a href="#"><img class="card-img-top" src="resources/img/img_mensajes.jpg" alt="Image placeholder"></a>
+            <a href="contactolistacontroller.do"><img class="card-img-top" src="resources/img/img_mensajes.jpg" alt="Image placeholder"></a>
             <div class="card-body">
               <h3 class="card-title"><a href="#"></a>Mensajes</h3>
               <p class="card-text">Consulta toda la mensajería existente y da una respuesta en caso sea necesario.</p>

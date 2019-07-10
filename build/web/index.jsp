@@ -73,8 +73,8 @@
                   <input type="text" class="form-control" id="nombreNuevo" name="txtUsuarioNombre" placeholder="Nombre" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="apellidosNuevo">Apellidos</label>
-                  <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioApellido" placeholder="Apellidos" required>
+                  <label for="apellidosNuevo">Apellido</label>
+                  <input type="text" class="form-control" id="apellidosNuevo" name="txtUsuarioApellido" placeholder="Apellido" required>
                 </div>
               </div>
               <div class="form-group">
@@ -290,9 +290,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card mb-3 card-2">
-              <a href="#"><img class="card-img-top" src="resources/img/img_1.jpg" alt="Image placeholder"></a>
+              <a href="https://centrevillelibrary.org/preparar-la-mesa-comer-sushi/" target="_blank"><img class="card-img-top" src="resources/img/img_1.jpg" alt="Image placeholder"></a>
               <div class="card-body">
-                <h3 class="card-title"><a href="#"></a>¿Cómo preparar la mesa para comer sushi?</h3>
+                <h3 class="card-title"><a href=#></a>¿Cómo preparar la mesa para comer sushi?</h3>
                 <p class="card-text">Preparar una noche de sushi puede ser una ocasión estresante,
                   especialmente si es un festejo especial. Por eso, hoy te presentaremos algunos
                   consejos sobre cómo preparar la mesa para comer sushi. </p>
@@ -302,9 +302,9 @@
 
           <div class="col-md-4">
             <div class="card mb-3 card-2">
-              <a href="#"><img class="card-img-top" src="resources/img/img_2.jpg" alt="Image placeholder"></a>
+              <a href="https://www.nuevamujer.com/wellness/2019/02/21/el-estilo-de-vida-de-los-japoneses-que-los-lleva-a-los-100-anos.html" target="_blank"><img class="card-img-top" src="resources/img/img_2.jpg" alt="Image placeholder"></a>
               <div class="card-body">
-                <h3 class="card-title"><a href="#"></a>Vivir 100 años es posible si sigues la dieta</h3>
+                <h3 class="card-title"><a href="#"></a>Vivir 100 años es posible si sigues la dieta japonesa</h3>
                 <p class="card-text">Llegar al centenario en la vida es el sueño de muchos y la respuesta
                   a esta incógnita podría estar en Asia. Japón, en la actualidad, es el país del mundo con un
                   a mayor esperanza de vida: 88,5 años y con más personas centenarias</p>
@@ -314,7 +314,7 @@
 
           <div class="col-md-4">
             <div class="card mb-3 card-2">
-              <a href="#"><img class="card-img-top" src="resources/img/img_3.jpg" alt="Image placeholder"></a>
+              <a href="https://www.restaurantes.com/blog/15-platos-imprescindibles-la-cocina-japonesa/" target="_blank"><img class="card-img-top" src="resources/img/img_3.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>15 platos imprescindibles de la cocina japonesa</h3>
                 <p class="card-text">Sobre la comida japonesa sigue existiendo la idea de que todo es o sushi
@@ -326,7 +326,7 @@
 
           <div class="col-md-4">
             <div class="card mb-3 card-2">
-              <a href="#"><img class="card-img-top" src="resources/img/img_4.jpg" alt="Image placeholder"></a>
+              <a href="https://experienciakirei.com/blogs/mundo-kirei/6-curiosidades-sobre-la-cocina-japonesa-que-no-conocias" target="_blank"><img class="card-img-top" src="resources/img/img_4.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Curiosidades de la cocina gastronómica nikkei</h3>
                 <p class="card-text">La gastronomía japonesa cada día gana más adeptos, y más y más personas
@@ -338,7 +338,7 @@
 
           <div class="col-md-4">
             <div class="card mb-3 card-2">
-              <a href="#"><img class="card-img-top" src="resources/img/img_5.jpg" alt="Image placeholder"></a>
+              <a href="https://es.inviptus.com/magazine/8-trucos-japoneses-para-adelgazar" target="_blank"><img class="card-img-top" src="resources/img/img_5.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Ocho trucos japoneses para adelgazar</h3>
                 <p class="card-text">Asia es un continente con bajo indice de obesidad, esto se debe a sus costumbres
@@ -350,7 +350,7 @@
 
           <div class="col-md-4">
             <div class="card mb-3 card-2">
-              <a href="#"><img class="card-img-top" src="resources/img/img_6.jpg" alt="Image placeholder"></a>
+              <a href="https://blogs.20minutos.es/la-gulateca/2015/11/12/10-cosas-que-hay-que-saber-para-comer-sushi-correctamente/" target="_blank"><img class="card-img-top" src="resources/img/img_6.jpg" alt="Image placeholder"></a>
               <div class="card-body">
                 <h3 class="card-title"><a href="#"></a>Cómo comer sushi correctamente</h3>
                 <p class="card-text">Has conseguido dominar los palillos como si fueras del mismísimo centro de
@@ -379,7 +379,7 @@
             <div class="person text-center bg-light pt-4">
               <img src="resources/img/person_1.jpg" alt="Image placeholder" class="img-fluid rounded-circle">
               <div class="person-info">
-                <span>Juan Lopez<br></span>
+                <span><strong>Juan Lopez</strong><br></span>
                 <span>Administrador</span>
 
               </div>
@@ -390,7 +390,7 @@
             <div class="person text-center bg-light pt-4">
               <img src="resources/img/person_2.jpg" alt="Image placeholder" class="img-fluid rounded-circle">
               <div class="person-info">
-                <span>Cristina Gutierrez<br></span>
+                <span><strong>Cristina Gutierrez</strong><br></span>
                 <span>Jefa de Cocina</span>
 
               </div>
@@ -401,7 +401,7 @@
             <div class="person text-center bg-light pt-4">
               <img src="resources/img/person_3.jpg" alt="Image placeholder" class="img-fluid rounded-circle">
               <div class="person-info">
-                <span>Miguel Salazar<br></span>
+                <span><strong>Miguel Salazar</strong><br></span>
                 <span>Jefe de Servicio</span>
 
               </div>
@@ -412,7 +412,7 @@
             <div class="person text-center bg-light pt-4">
               <img src="resources/img/person_4.jpg" alt="Image placeholder" class="img-fluid rounded-circle">
               <div class="person-info">
-                <span>Esteban Fernandez<br></span>
+                <span><strong>Esteban Fernandez</strong><br></span>
                 <span>Jefe de Barra</span>
 
               </div>
@@ -497,7 +497,7 @@
                   </div>
                   <div class="modal-body">
                     <p>¿Te gustaría trabajar con nosotros? Adjunta tu CV y cuéntanos un poco de ti.</p>
-                    <form action="postulantecontroller.do" method="POST">
+                    <form action="postulantecontroller.do" method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <input type="text" class="form-control" id="nombreAplicante" name="txtPostNombre" placeholder="Nombres">
                       </div>

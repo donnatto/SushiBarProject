@@ -3,14 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hamachisushi.controller;
 
-import com.hamachisushi.daos.ReservaDAO;
-import com.hamachisushi.daos.ReservaListaDAO;
-import com.hamachisushi.model.Reserva;
+import com.hamachisushi.daos.ContactoListaDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ASUS
  */
-@WebServlet(name = "ReservaListaController", urlPatterns = {"/listacontroller.do"})
-public class ReservaListaController extends HttpServlet {
+@WebServlet(urlPatterns = {"/contactoupdate.do"})
+public class ContactoUpdateController extends HttpServlet {
 
   /**
    * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,12 +31,15 @@ public class ReservaListaController extends HttpServlet {
    */
   protected void processRequest(HttpServletRequest request, HttpServletResponse response)
           throws ServletException, IOException {
-
-    ReservaListaDAO reservabd = new ReservaListaDAO();
-    ArrayList<Reserva> listaReservas = new ArrayList<>();
-    listaReservas = reservabd.selectAll();
-    request.getSession().setAttribute("lista", listaReservas);
-    request.getRequestDispatcher("g_reservas.jsp").forward(request, response);
+    response.setContentType("text/html;charset=UTF-8");
+    try (PrintWriter out = response.getWriter()) {
+      /* TODO output your page here. You may use following sample code. */
+      String id = request.getParameter("id");
+      Boolean resultado;
+      ContactoListaDAO operacion = new ContactoListaDAO();
+      resultado = operacion.eliminarMensaje(id);
+      out.println(resultado);
+    }
   }
 
   // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
