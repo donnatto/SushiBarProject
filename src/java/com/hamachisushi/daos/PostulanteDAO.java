@@ -17,7 +17,7 @@ import java.sql.ResultSet;
 public class PostulanteDAO {
     
     private static final String sql_insertPostulante="insert into Postulante "
-            + "values(?,?,?,?)";
+            + "values(?,?,?,?,?)";
     
     private PreparedStatement pstm=null;
     private ResultSet res=null;
@@ -29,8 +29,9 @@ public class PostulanteDAO {
              pstm=con.getCon().prepareStatement(sql_insertPostulante);
              pstm.setString(1, t.getNombre());
              pstm.setString(2, t.getCorreo());
-             pstm.setString(3, t.getTelefono());
-             pstm.setString(4, t.getDescripcion());
+             pstm.setString(3, t.getCurriculm());
+             pstm.setString(4, t.getTelefono());
+             pstm.setString(5, t.getDescripcion());
                        
              if(pstm.executeUpdate()>0){
               result=true;

@@ -14,6 +14,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.hamachisushi.model.Postulante;
 import com.hamachisushi.daos.PostulanteDAO;
+import java.io.File;
+import java.util.Iterator;
+import java.util.List;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 /**
  *
  * @author Alumno
@@ -34,12 +40,50 @@ public class PostulanteController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        String nombre = request.getParameter("txtPostNombre");
-        String correo = request.getParameter("txtPostCorreo");
-        String telefono = request.getParameter("txtPostTelefono");
-        String mensaje = request.getParameter("txtPostMensaje");
+        String nombre=null;
+        String correo=null;
+        String curriculum=null;
+        String telefono=null;
+        String mensaje=null;
         
-        Postulante postulante = new Postulante(nombre, correo, telefono, mensaje);
+        try {
+            
+            ServletFileUpload sfu = new ServletFileUpload(new DiskFileItemFactory());
+            List<FileItem> multifiles  = sfu.parseRequest(request);
+            Iterator<FileItem> iter = multifiles.iterator();
+            
+            while (iter.hasNext()) {
+                
+                FileItem item = iter.next();
+
+                if (item.isFormField()) {
+                    
+                    String name = item.getString();
+                    String parameter = item.getFieldName();
+                    
+                    if (parameter.equals("txtPostNombre")) {
+                        nombre = name;
+                    } else if (parameter.equals("txtPostCorreo")) {
+                        correo = name;
+                    } else if (parameter.equals("txtPostTelefono")) {
+                        telefono = name;
+                    } else if (parameter.equals("txtPostMensaje")) {
+                        mensaje = name;
+                    }
+                                       
+                } else {
+                    String ruta = "C:\\data\\" + item.getName();
+                    item.write(new File(ruta));
+                    curriculum = ruta;
+                }
+            }     
+        } catch (Exception ex) {
+            
+            System.out.println(ex.getMessage());
+        }
+        try {
+        Postulante postulante = new Postulante(nombre, correo, curriculum,
+                telefono, mensaje);
         PostulanteDAO postulanteDAO = new PostulanteDAO();
         
         if (postulanteDAO.sql_insert(postulante) == true) {
@@ -50,6 +94,9 @@ public class PostulanteController extends HttpServlet {
             String respuesta = ("La aplicacion no se registro correctamente, intentelo nuevamente.");
             request.getSession().setAttribute("respuesta", respuesta);
             request.getRequestDispatcher("error.jsp").forward(request, response);
+        }
+        } catch (Exception ex) {
+            System.out.println(ex);
         }
     }
 

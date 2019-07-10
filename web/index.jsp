@@ -509,7 +509,7 @@
                       </div>
                       <div class="form-group">
                         <div class="custom-file">
-                          <input type="file" class="file-input" id="cvAplicante">
+                          <input type="file" class="file-input" id="cvAplicante" name="filePostCurriculum">
                         </div>
                       </div>
                       <div class="form-group">

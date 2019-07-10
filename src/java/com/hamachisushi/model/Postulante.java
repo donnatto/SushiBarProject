@@ -13,12 +13,15 @@ public class Postulante {
     
     private String nombre;
     private String correo;
+    private String curriculm;
     private String telefono;
     private String descripcion;
 
-    public Postulante(String nombre, String correo, String telefono, String descripcion) {
+    public Postulante(String nombre, String correo, String curriculum,
+                      String telefono, String descripcion) {
         this.nombre = nombre;
         this.correo = correo;
+        this.curriculm = curriculum;
         this.telefono = telefono;
         this.descripcion = descripcion;
     }
@@ -39,6 +42,16 @@ public class Postulante {
         this.correo = correo;
     }
 
+    public String getCurriculm() {
+        return curriculm;
+    }
+
+    public void setCurriculm(String curriculm) {
+        this.curriculm = curriculm;
+    }
+
+    
+    
     public String getTelefono() {
         return telefono;
     }
