@@ -5,9 +5,8 @@
  */
 package com.hamachisushi.controller;
 
-import com.hamachisushi.daos.ReservaDAO;
-import com.hamachisushi.daos.ReservaListaDAO;
-import com.hamachisushi.model.Reserva;
+import com.hamachisushi.daos.ContactoListaDAO;
+import com.hamachisushi.model.Contacto;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -21,8 +20,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ASUS
  */
-@WebServlet(name = "ReservaListaController", urlPatterns = {"/listacontroller.do"})
-public class ReservaListaController extends HttpServlet {
+@WebServlet(name = "ContactoListaController", urlPatterns = {"/contactolistacontroller.do"})
+public class ContactoListaController extends HttpServlet {
 
   /**
    * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,12 +34,12 @@ public class ReservaListaController extends HttpServlet {
    */
   protected void processRequest(HttpServletRequest request, HttpServletResponse response)
           throws ServletException, IOException {
-
-    ReservaListaDAO reservabd = new ReservaListaDAO();
-    ArrayList<Reserva> listaReservas = new ArrayList<>();
-    listaReservas = reservabd.selectAll();
-    request.getSession().setAttribute("lista", listaReservas);
-    request.getRequestDispatcher("g_reservas.jsp").forward(request, response);
+    
+    ContactoListaDAO reservabd = new ContactoListaDAO();
+    ArrayList<Contacto> listaContactos = new ArrayList<>();
+    listaContactos = reservabd.selectAll();
+    request.getSession().setAttribute("lista", listaContactos);
+    request.getRequestDispatcher("g_mensajes.jsp").forward(request, response);
   }
 
   // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -10,49 +10,66 @@ package com.hamachisushi.model;
  * @author Alumno
  */
 public class Contacto {
-    
-    private String nombre;
-    private String correo;
-    private String asunto;
-    private String mensaje;
 
-    public Contacto(String nombre, String correo, String asunto, String mensaje) {
-        this.nombre = nombre;
-        this.correo = correo;
-        this.asunto = asunto;
-        this.mensaje = mensaje;
-    }
+  private int id;
+  private String nombre;
+  private String correo;
+  private String asunto;
+  private String mensaje;
 
-    public String getNombre() {
-        return nombre;
-    }
+  public Contacto(String nombre, String correo, String asunto, String mensaje) {
+    this.nombre = nombre;
+    this.correo = correo;
+    this.asunto = asunto;
+    this.mensaje = mensaje;
+  }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+  public Contacto(int id, String nombre, String correo, String asunto, String mensaje) {
+    this.id = id;
+    this.nombre = nombre;
+    this.correo = correo;
+    this.asunto = asunto;
+    this.mensaje = mensaje;
+  }
 
-    public String getCorreo() {
-        return correo;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public String getAsunto() {
-        return asunto;
-    }
+  public String getNombre() {
+    return nombre;
+  }
 
-    public void setAsunto(String asunto) {
-        this.asunto = asunto;
-    }
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
 
-    public String getMensaje() {
-        return mensaje;
-    }
+  public String getCorreo() {
+    return correo;
+  }
 
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
-    }
-    
+  public void setCorreo(String correo) {
+    this.correo = correo;
+  }
+
+  public String getAsunto() {
+    return asunto;
+  }
+
+  public void setAsunto(String asunto) {
+    this.asunto = asunto;
+  }
+
+  public String getMensaje() {
+    return mensaje;
+  }
+
+  public void setMensaje(String mensaje) {
+    this.mensaje = mensaje;
+  }
+
 }

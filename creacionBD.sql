@@ -7,6 +7,7 @@ go
 use hamachiSushi
 go
 
+
 create table Reserva(
 	id int identity (1,1) primary key,
 	nombre varchar(30) not null,
@@ -20,11 +21,9 @@ create table Reserva(
 	)
 go
 
-select * from Reserva
-go
 
 create table Usuario(
-	id int identity not null,
+	id int identity (1,1) primary key,
 	nombre varchar(30) not null,
 	apellidos varchar(30) not null,
 	correo varchar(30) not null,
@@ -33,23 +32,27 @@ create table Usuario(
 )
 go
 
+
 create table Postulante(
-	id int identity not null,
+	id int identity (1,1) primary key,
 	nombre varchar(30) not null,
 	correo varchar(30) not null,
 	nro_Contacto varchar(15) not null,
 	descripcion varchar(100) not null
 )
 go
+
 create table Empleado(
-	codigoEmpleado varchar(10) not null,
+	codigoEmpleado varchar(12) primary key,
 	nombre varchar(30) not null,
-	apellidos varchar(30) not null,
+	apellido varchar(30) not null
 )
+go
+
 create table Contacto(
-	idContacto int identity not null,
+	idContacto int identity (1,1) primary key,
 	nombre varchar(30) not null,
 	correo varchar(30) not null,
 	asunto varchar(20) not null,
-	mensaje varchar(200) not null
+	mensaje varchar(400) not null
 )

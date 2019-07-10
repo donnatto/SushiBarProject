@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Donatto/projects/sushibar-jsp/src/java/com/hamachisushi/model/Reserva.java</file>
-            <file>file:/E:/Donatto/projects/sushibar-jsp/web/resources/js/main.js</file>
+            <file>file:/E:/Donatto/projects/sushibar-jsp/src/java/com/hamachisushi/daos/UsuarioDAO.java</file>
+            <file>file:/E:/Donatto/projects/sushibar-jsp/web/WEB-INF/jspf/section_postulantes.jspf</file>
+            <file>file:/E:/Donatto/projects/sushibar-jsp/src/java/com/hamachisushi/daos/EmpleadoDAO.java</file>
             <file>file:/E:/Donatto/projects/sushibar-jsp/web/resources/css/style.css</file>
-            <file>file:/E:/Donatto/projects/sushibar-jsp/web/WEB-INF/jspf/nav.jspf</file>
-            <file>file:/E:/Donatto/projects/sushibar-jsp/src/java/com/hamachisushi/daos/ReservaListaDAO.java</file>
-            <file>file:/E:/Donatto/projects/sushibar-jsp/web/g_reservas.jsp</file>
-            <file>file:/E:/Donatto/projects/sushibar-jsp/web/WEB-INF/jspf/nav_system.jspf</file>
+            <file>file:/E:/Donatto/projects/sushibar-jsp/web/system.jsp</file>
+            <file>file:/E:/Donatto/projects/sushibar-jsp/web/g_postulantes.jsp</file>
         </group>
     </open-files>
 </project-private>

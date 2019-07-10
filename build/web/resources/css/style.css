@@ -107,6 +107,20 @@ li{
   background-position: center;
   background-size: cover;
 }
+#card-mensajes{
+  padding: 13% 2%;
+  background-image: url(../img/bg_mensajes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#card-postulantes{
+  padding: 13% 2%;
+  background-image: url(../img/bg_postulantes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 #section-text{
   padding-top: 7%;
   text-shadow: 1px 4px 3px rgba(0,0,0, .4),

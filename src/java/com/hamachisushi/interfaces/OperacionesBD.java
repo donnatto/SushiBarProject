@@ -13,5 +13,6 @@ import java.util.ArrayList;
  */
 public interface OperacionesBD <T> {
   public ArrayList<T> selectAll();
-    public Object updateEstado(Object id, Object estado);
+  public Object updateEstado(Object id, Object estado);
+  public Boolean eliminarMensaje(Object id);
 }
