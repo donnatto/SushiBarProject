@@ -37,6 +37,7 @@ create table Postulante(
 	id int identity (1,1) primary key,
 	nombre varchar(30) not null,
 	correo varchar(30) not null,
+	curriculum varchar(255) not null,
 	nro_Contacto varchar(15) not null,
 	descripcion varchar(100) not null
 )
