@@ -62,7 +62,7 @@
           <h3 class="heading-section">Informacion de Contacto</h3>
           <ul>
             <li><span class="text">La Molina, Lima, Perú</span></li>
-            <li><span class="text">+51 965 895 572</span></li>
+            <li><a href="http://github.com/donnatto" target="_blank"><span class="text">github.com/donnatto</span></a></li>
             <li><a href="#"><span class="text">info@hamachisushibar.com</span></a></li>
           </ul>
         </div>

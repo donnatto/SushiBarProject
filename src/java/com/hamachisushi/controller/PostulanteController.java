@@ -72,7 +72,8 @@ public class PostulanteController extends HttpServlet {
                     }
                                        
                 } else {
-                    String ruta = "C:\\data\\" + item.getName();
+                    
+                    String ruta = "C:\\upload\\" + item.getName();
                     item.write(new File(ruta));
                     curriculum = ruta;
                 }

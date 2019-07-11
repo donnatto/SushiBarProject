@@ -10,63 +10,78 @@ package com.hamachisushi.model;
  * @author Alumno
  */
 public class Postulante {
-    
-    private String nombre;
-    private String correo;
-    private String curriculm;
-    private String telefono;
-    private String descripcion;
 
-    public Postulante(String nombre, String correo, String curriculum,
-                      String telefono, String descripcion) {
-        this.nombre = nombre;
-        this.correo = correo;
-        this.curriculm = curriculum;
-        this.telefono = telefono;
-        this.descripcion = descripcion;
-    }
+  private int id;
+  private String nombre;
+  private String correo;
+  private String curriculm;
+  private String telefono;
+  private String descripcion;
 
-    public String getNombre() {
-        return nombre;
-    }
+  public Postulante(String nombre, String correo, String curriculum,
+          String telefono, String descripcion) {
+    this.nombre = nombre;
+    this.correo = correo;
+    this.curriculm = curriculum;
+    this.telefono = telefono;
+    this.descripcion = descripcion;
+  }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+  public Postulante(int id, String nombre, String correo, String curriculm, String telefono, String descripcion) {
+    this.id = id;
+    this.nombre = nombre;
+    this.correo = correo;
+    this.curriculm = curriculm;
+    this.telefono = telefono;
+    this.descripcion = descripcion;
+  }
 
-    public String getCorreo() {
-        return correo;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
+  public void setId(int id) {
+    this.id = id;
+  }
 
-    public String getCurriculm() {
-        return curriculm;
-    }
+  public String getNombre() {
+    return nombre;
+  }
 
-    public void setCurriculm(String curriculm) {
-        this.curriculm = curriculm;
-    }
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
 
-    
-    
-    public String getTelefono() {
-        return telefono;
-    }
+  public String getCorreo() {
+    return correo;
+  }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
+  public void setCorreo(String correo) {
+    this.correo = correo;
+  }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
+  public String getCurriculm() {
+    return curriculm;
+  }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-    
-    
+  public void setCurriculm(String curriculm) {
+    this.curriculm = curriculm;
+  }
+
+  public String getTelefono() {
+    return telefono;
+  }
+
+  public void setTelefono(String telefono) {
+    this.telefono = telefono;
+  }
+
+  public String getDescripcion() {
+    return descripcion;
+  }
+
+  public void setDescripcion(String descripcion) {
+    this.descripcion = descripcion;
+  }
+
 }

@@ -15,10 +15,10 @@ import java.sql.DriverManager;
 public class ConexionBD {
     
     private static ConexionBD instance=null;
-    private static final String url="jdbc:sqlserver://localhost\\MSSQLSERVER:1433;databaseName=hamachiSushi";
+    private static final String url="jdbc:sqlserver://hamachisushi.database.windows.net:1433;databaseName=hamachiSushi";
     private static final String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private static final String user="sa";
-    private static final String clave="123456";
+    private static final String user="edwin";
+    private static final String clave="MARIAgracia123";
     private static Connection con=null;
     
     private ConexionBD(){      

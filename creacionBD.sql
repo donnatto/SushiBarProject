@@ -2,8 +2,6 @@ use master
 go
 
 create database hamachiSushi
-go
-
 use hamachiSushi
 go
 
@@ -43,12 +41,14 @@ create table Postulante(
 )
 go
 
+
 create table Empleado(
 	codigoEmpleado varchar(12) primary key,
 	nombre varchar(30) not null,
 	apellido varchar(30) not null
 )
 go
+
 
 create table Contacto(
 	idContacto int identity (1,1) primary key,

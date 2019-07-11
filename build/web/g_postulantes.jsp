@@ -46,24 +46,24 @@
             <th>#</th>
             <th>Nombre</th>
             <th>Correo</th>
-            <th>Asunto</th>
-            <th>Mensaje</th>
-            <th>Acciones</th>
-
+            <th>Nro. Contacto</th>
+            <th>Descripción</th>
+            <th>CV</th>
           </tr>
         </thead>
         <tbody>
-          <c:forEach var="Contacto" items="${sessionScope.lista}">
-            <tr id="row${Contacto.id}">
-              <td>${Contacto.id}</td>
-              <td>${Contacto.nombre}</td>
-              <td>${Contacto.correo}</td>
-              <td>${Contacto.asunto}</td>
-              <td class="text-left">${Contacto.mensaje}</td>
+          <c:forEach var="Postulante" items="${sessionScope.lista}">
+            <tr id="row${Postulante.id}">
+              <td>${Postulante.id}</td>
+              <td>${Postulante.nombre}</td>
+              <td>${Postulante.correo}</td>
+              <td>${Postulante.telefono}</td>
+              <td class="text-left">${Postulante.descripcion}</td>
 
               <td class="row">
-                <a class="col-6" href="mailto:${Contacto.correo}"><i class="fa fa-envelope-open-text text-info" aria-hidden="true"></i></a>
-                <a class="col-6" href="javascript:void(0);" onclick="eliminarMensaje(${Contacto.id});"><i class="far fa-trash-alt text-danger" aria-hidden="true"></i></a>
+                <a class="col-6" href="file:///${Postulante.curriculm}"><i class="fab fa-readme text-info" aria-hidden="true"></i></a>
+                <a class="col-6" href="mailto:${Postulante.correo}"><i class="fa fa-envelope-open-text text-success" aria-hidden="true"></i></a>
+                
 
               </td>
             </tr>
