@@ -13,15 +13,15 @@ This is a project made for the Bussiness Application Development I course, using
 - **Jelastic** - deployment platform
 
 ## Functionalities
-1. Book a table
-2. Apply for a job
-3. Leave messages
-4. Creation of users
-5. Access to the management system to:
+- Book a table
+- Apply for a job
+- Leave messages
+- Creation of users
+- Access to the management system to:
     - Confirm or reject reservations
     - Evaluate job applications
     - View or delete messages
 
 ## Authors
-- **Edwin Dominguez** [@donnatto](https://github.com/donnatto)
-- **Miguel Ramos** [@miguelramosc2201](https://github.com/miguelramosc2201)
+**Edwin Dominguez** - [@donnatto](https://github.com/donnatto)  
+**Miguel Ramos** - [@miguelramosc2201](https://github.com/miguelramosc2201)
