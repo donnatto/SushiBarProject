@@ -1,7 +1,7 @@
 # Hamachi Sushi Bar
 >Sushi Bar Project made using JavaServer Pages, for educational use only.  
 
-You can visit the site [here.](http://env-4887371.jl.serv.net.mx/hamachiSushi/index.jsp)  
+You can visit the site [here.](https://hamachisushi.herokuapp.com)  
 This is a project made for the Bussiness Application Development I course, using JSP.
 
 ## Build Info
@@ -10,7 +10,7 @@ This is a project made for the Bussiness Application Development I course, using
 - **Glassfish** - appication server used
 - **Netbeans** - IDE used
 - **Azure** - database hosting service
-- **Jelastic** - deployment platform
+- **Heroku** - deployment platform
 
 ## Functionalities
 - Book a table
